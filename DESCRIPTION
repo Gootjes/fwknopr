@@ -1,0 +1,20 @@
+Package: fwknop
+Type: Package
+Title: R client for the fwknop protocol for securely opening firewall ports
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Frank", "Gootjes",
+      email = "r-package-fwknop-contact@frankgootjes.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Generates and sends an SPA packet to a remote fwknop server, allowing
+  temporary access through a firewall according to the specified access
+  request and server credentials.
+License: GPL3
+Encoding: UTF-8
+LazyData: true
+Depends: digest, openssl, base64enc, keyring, udpprobe
+Remotes: git::https://github.com/hrbrmstr/udpprobe.git
+Config/roxygen2/version: 8.0.0
